@@ -20,3 +20,5 @@ end
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+
+Post.create(title: "Assignement-26 Unique Title", body: "Like the title says... unique.")
