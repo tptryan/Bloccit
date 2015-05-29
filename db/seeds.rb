@@ -16,9 +16,9 @@ posts = Post.all
     body: Faker::Lorem.paragraph
   )
 end
+post = Post.find_or_create_by(title: "Assignement-26 Unique Title", body: "Like the title says... unique.")
+comment = Comment.find_or_create_by(body: "Assignment-26's unique comment.", post: post)
 
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
-
-Post.create(title: "Assignement-26 Unique Title", body: "Like the title says... unique.")
